@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ShaoMing Chen · Software Engineer</title>
+  <meta name="description" content="ShaoMing Chen, software engineer in Taipei. Edge video and audio on Jetson Orin, local-AI desktop apps, self-calibrating weather forecasts, and tested web apps.">
+  <meta name="author" content="ShaoMing Chen">
+  <link rel="canonical" href="https://fuyo1622.github.io/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://fuyo1622.github.io/">
+  <meta property="og:title" content="ShaoMing Chen · Software Engineer">
+  <meta property="og:description" content="Edge video and audio on Jetson Orin, local-AI apps, and tested, measured software. Taipei, Taiwan.">
+  <meta name="twitter:card" content="summary">
+
+  <meta name="theme-color" content="#fbfaf7" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0f1115" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <script>
+    // Apply the saved theme before first paint to avoid a flash.
+    try {
+      var t = localStorage.getItem('theme');
+      if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+    } catch (e) {}
+  </script>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top" aria-label="ShaoMing Chen, back to top">
+        <span class="brand-mark" aria-hidden="true">SC</span>
+        <span class="brand-name">ShaoMing Chen</span>
+      </a>
+      <nav aria-label="Sections">
+        <ul class="nav-links">
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#education">Education</a></li>
+        </ul>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="Switch color theme" title="Switch color theme">
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 1.5v2.5M12 20v2.5M4.6 4.6l1.8 1.8M17.6 17.6l1.8 1.8M1.5 12H4M20 12h2.5M4.6 19.4l1.8-1.8M17.6 6.4l1.8-1.8"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11z"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Software Engineer · Taipei, Taiwan</p>
+          <h1>ShaoMing Chen <span class="name-zh" lang="zh-Hant">陳紹銘</span></h1>
+          <p class="lede">
+            I work on edge video and audio at <strong>aiseed</strong>: camera pipelines, streaming and
+            push-to-talk on Jetson Orin. In my own time I build apps that run local models, learn on
+            the device, and ship with real tests and measured results.
+          </p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#projects">See projects</a>
+            <a class="btn" href="https://github.com/fuyo1622" rel="me">
+              <svg class="icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+              github.com/fuyo1622
+            </a>
+          </div>
+        </div>
+
+        <aside class="facts" aria-label="Quick facts">
+          <div class="facts-bar" aria-hidden="true"><span></span><span></span><span></span></div>
+          <dl>
+            <div><dt>now</dt><dd>Software Engineer, aiseed Inc.</dd></div>
+            <div><dt>edu</dt><dd>M.S. Communication Eng., NTU</dd></div>
+            <div><dt>focus</dt><dd>edge video · local AI · tested apps</dd></div>
+            <div><dt>code</dt><dd>Python · JavaScript/React · C++/Qt</dd></div>
+            <div><dt>tests</dt><dd>pytest · Vitest · Playwright · CI</dd></div>
+          </dl>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="section" id="experience" aria-labelledby="experience-title">
+      <div class="wrap">
+        <h2 class="section-title" id="experience-title"><span class="num" aria-hidden="true">01</span>Experience</h2>
+
+        <ol class="timeline">
+          <li class="role">
+            <div class="role-head">
+              <div>
+                <h3>aiseed Inc.</h3>
+                <p class="role-title">Software Engineer</p>
+              </div>
+              <p class="date">Aug 2026 – Present</p>
+            </div>
+            <ul class="bullets">
+              <li>Integrated an EO/IR video pipeline on Jetson Orin, connecting V4L2 capture, stream separation and GStreamer hardware H.264 encoding to RTSP playback in QGroundControl.</li>
+              <li>Built a WebSocket audio link between QGroundControl and Jetson Orin for recorded-audio playback and live push-to-talk, with ALSA output, playback priorities and timeout handling.</li>
+              <li>Investigated EO/IR image failures with RTP captures and direct HDMI tests. Reproduced black EO video and IR color bars on a standalone display, narrowing the issue to the camera output path.</li>
+              <li>Evaluated Raspberry Pi 5/CM5 for edge video and inference: verified H.264/RTSP streaming from 720p50 MJPEG input on CM5, and measured about 14 FPS for YOLOv8n CPU inference with NCNN on Raspberry Pi 5.</li>
+            </ul>
+            <ul class="tags" aria-label="Technologies">
+              <li>Jetson Orin</li><li>GStreamer</li><li>V4L2</li><li>RTSP</li><li>WebSocket</li><li>ALSA</li><li>QGroundControl</li><li>C++/Qt</li><li>Raspberry Pi 5</li><li>NCNN</li>
+            </ul>
+          </li>
+
+          <li class="role">
+            <div class="role-head">
+              <div>
+                <h3>Trend Micro Inc.</h3>
+                <p class="role-title">Software Engineer Intern</p>
+              </div>
+              <p class="date">Jul 2022 – Aug 2022</p>
+            </div>
+            <ul class="bullets">
+              <li>Implemented TOML-based configuration to replace YAML, and presented the new format in an internal knowledge-sharing session.</li>
+              <li>Set up Jenkins and local build/test environments, deployed builds for manual API checks, ran Behave tests, and documented setup and troubleshooting in the internal wiki.</li>
+            </ul>
+            <ul class="tags" aria-label="Technologies">
+              <li>TOML</li><li>Jenkins</li><li>Behave</li><li>CI</li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="wrap">
+        <h2 class="section-title" id="projects-title"><span class="num" aria-hidden="true">02</span>Projects</h2>
+        <p class="section-intro">
+          For these projects I set the requirements, chose architectures and algorithms, designed the
+          evaluations, and verified features through automated tests and on-device use. AI coding tools
+          wrote most of the code.
+        </p>
+
+        <div class="project-grid">
+          <!-- Translate from Voice -->
+          <article class="project">
+            <header class="project-head">
+              <h3>Translate from Voice</h3>
+              <div class="project-links">
+                <a href="https://github.com/fuyo1622/translate-from-voice" aria-label="Translate from Voice source code on GitHub">Code<span aria-hidden="true"> ↗</span></a>
+              </div>
+            </header>
+            <p class="tagline">Live subtitles for whatever your PC plays: local speech recognition and translation between 繁中, English and 日本語.</p>
+            <dl class="metrics">
+              <div><dt>median first-text latency</dt><dd>4.1→1.0 s</dd></div>
+              <div><dt>Japanese CER</dt><dd>39.0→11.2%</dd></div>
+              <div><dt>pytest tests</dt><dd>107</dd></div>
+            </dl>
+            <ul class="bullets">
+              <li>Windows desktop app that captures system audio and overlays live, translated subtitles using local models only.</li>
+              <li>Picks speech and translation models from the hardware profile, free memory and a startup speed test, and switches to lighter models when either stage falls behind live audio.</li>
+              <li>Evaluation harness for CER/WER, chrF, speed and VRAM. On a 12-clip Japanese TV replay (RTX 3050 4 GB laptop), moving to ReazonSpeech with live partial text plus VAD and segmentation fixes produced the gains above.</li>
+            </ul>
+            <ul class="tags" aria-label="Technologies"><li>Python</li><li>PySide6</li><li>faster-whisper</li><li>llama.cpp</li></ul>
+          </article>
+
+          <!-- Taiwan Weather -->
+          <article class="project">
+            <header class="project-head">
+              <h3>Taiwan Weather</h3>
+              <div class="project-links">
+                <a href="https://github.com/fuyo1622/ios-weather-app" aria-label="Taiwan Weather source code on GitHub">Code<span aria-hidden="true"> ↗</span></a>
+              </div>
+            </header>
+            <p class="tagline">Self-calibrating weather app and home-screen widgets for iPhone (Scriptable) and Android.</p>
+            <dl class="metrics">
+              <div><dt>forecast sources</dt><dd>CWA + 7</dd></div>
+              <div><dt>radar rain nowcast</dt><dd>next 1 h</dd></div>
+              <div><dt>per-source error learning</dt><dd>on device</dd></div>
+            </dl>
+            <ul class="bullets">
+              <li>Blends Central Weather Administration township forecasts with seven Open-Meteo models.</li>
+              <li>Learns on the device: compares each source with station observations, corrects bias and weights forecasts by error at each lead time. Live station readings correct the next few hours.</li>
+              <li>Next-hour rain from CWA radar images: colors converted to dBZ, motion estimated with block matching and projected forward.</li>
+              <li>A Node harness tests forecasts and learning on simulated weather; GitHub Actions builds the signed APK and runs app and widget checks on an emulator.</li>
+            </ul>
+            <ul class="tags" aria-label="Technologies"><li>JavaScript</li><li>Scriptable</li><li>Android</li><li>GitHub Actions</li></ul>
+          </article>
+
+          <!-- ACG Merchandise Collector -->
+          <article class="project">
+            <header class="project-head">
+              <h3>ACG Merchandise Collector</h3>
+              <div class="project-links">
+                <a href="https://acg-app-steel.vercel.app" aria-label="Open ACG Merchandise Collector live app">Live<span aria-hidden="true"> ↗</span></a>
+                <a href="https://github.com/fuyo1622/acg_app" aria-label="ACG Merchandise Collector source code on GitHub">Code<span aria-hidden="true"> ↗</span></a>
+              </div>
+            </header>
+            <p class="tagline">Installable, offline-first, bilingual PWA for cataloging anime, comic and game merchandise and wishlists.</p>
+            <dl class="metrics">
+              <div><dt>Vitest unit tests</dt><dd>250+</dd></div>
+              <div><dt>browser engines in E2E</dt><dd>2</dd></div>
+              <div><dt>offline, data stays local</dt><dd>PWA</dd></div>
+            </dl>
+            <ul class="bullets">
+              <li>Stores items and photos in IndexedDB, with search, filters and offline use.</li>
+              <li>Batch photo import and phone-sized, multi-part ZIP backup and restore, including older JSON backups. Schema-migration tests check that existing data survives upgrades.</li>
+              <li>GitHub Actions runs ESLint, Vitest and Playwright end-to-end tests with accessibility checks. Deployed on Vercel.</li>
+            </ul>
+            <ul class="tags" aria-label="Technologies"><li>React</li><li>Dexie</li><li>PWA</li><li>Playwright</li></ul>
+          </article>
+
+          <!-- Sukima Nihongo -->
+          <article class="project">
+            <header class="project-head">
+              <h3>スキマ日語 · Sukima Nihongo</h3>
+              <div class="project-links">
+                <a href="https://sukima-nihongo.vercel.app" aria-label="Open Sukima Nihongo web app">Live<span aria-hidden="true"> ↗</span></a>
+                <a href="https://github.com/fuyo1622/sukima-nihongo" aria-label="Sukima Nihongo source code on GitHub">Code<span aria-hidden="true"> ↗</span></a>
+              </div>
+            </header>
+            <p class="tagline">Micro-learning Japanese app for Traditional Chinese speakers, from kana to JLPT N1, in 1–5 minute blocks.</p>
+            <dl class="metrics">
+              <div><dt>words</dt><dd>2,586</dd></div>
+              <div><dt>kanji</dt><dd>796</dd></div>
+              <div><dt>grammar points</dt><dd>229</dd></div>
+            </dl>
+            <ul class="bullets">
+              <li>Adaptive: FSRS spaced repetition plus an Elo-style level estimate and a placement test. Every answer is saved, so a block resumes on the exact question.</li>
+              <li>Built for Chinese speakers: 新字體↔繁體 comparison, 漢字陷阱 false friends and kana origins. Sound and silent versions of the same questions.</li>
+              <li>Every push deploys the web app to Vercel and builds an Android APK that CI walks through on an emulator before release.</li>
+            </ul>
+            <ul class="tags" aria-label="Technologies"><li>TypeScript</li><li>Expo</li><li>React Native</li><li>FSRS</li></ul>
+          </article>
+        </div>
+
+        <h3 class="subhead">More on GitHub</h3>
+        <ul class="more-list">
+          <li>
+            <a href="https://github.com/fuyo1622/auto-detect-agent">
+              <span class="more-name">Agent Monitor</span>
+              <span class="more-desc">Watches Claude Code sessions on a Windows PC and reconnects Remote Control from an iPhone PWA over Tailscale.</span>
+              <span class="more-lang">TypeScript</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://fuyo1622.github.io/yoasobi-song-quiz/">
+              <span class="more-name">YOASOBI Song Quiz</span>
+              <span class="more-desc">Fan-made song quiz from short clips, with quiz and practice modes, in English, 繁體中文 and 日本語.</span>
+              <span class="more-lang">JavaScript</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/fuyo1622/grid-labeling-frontier-dp">
+              <span class="more-name">Grid Labeling Frontier DP</span>
+              <span class="more-desc">Exact frontier dynamic-programming solvers for neighbor-constrained grid labeling, with optimal-arrangement reconstruction.</span>
+              <span class="more-lang">C++ · Python</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/fuyo1622/learncpp_download_pdf">
+              <span class="more-name">LearnCpp PDF Builder</span>
+              <span class="more-desc">Resumable pipeline that crawls, cleans and renders tutorials into PDFs for offline reading.</span>
+              <span class="more-lang">Python</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/fuyo1622/2022-NTU-DLCV">
+              <span class="more-name">Deep Learning for Computer Vision</span>
+              <span class="more-desc">NTU coursework: segmentation, GANs, diffusion, domain adaptation, CLIP, captioning, novel-view synthesis and BYOL.</span>
+              <span class="more-lang">PyTorch</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/fuyo1622/NTUEE-Computer_Architecture-110-1">
+              <span class="more-name">Computer Architecture</span>
+              <span class="more-desc">NTUEE coursework in assembly and Verilog hardware design; final project scored 114/120.</span>
+              <span class="more-lang">Verilog</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ RESEARCH ============ -->
+    <section class="section" id="research" aria-labelledby="research-title">
+      <div class="wrap">
+        <h2 class="section-title" id="research-title"><span class="num" aria-hidden="true">03</span>Research</h2>
+
+        <article class="research">
+          <div class="research-copy">
+            <p class="eyebrow">M.S. thesis · National Taiwan University · Mar 2026</p>
+            <h3>Coverage Gap Analysis for In-Cabin Object Detection</h3>
+            <ul class="bullets">
+              <li>Used pose estimates to find sparse driver-position and orientation regions in an in-cabin dataset.</li>
+              <li>Generated targeted samples with camera-controlled video synthesis and LoRA, validated their features, and replaced samples while keeping the dataset size fixed.</li>
+              <li>Detection performance dropped on manually labeled synthetic subsets, revealing sensitivity to the targeted driver configurations.</li>
+            </ul>
+            <ol class="pipeline" aria-label="Feature pipeline">
+              <li>MeTRAbs pose</li><li>Depth-Anything-V2</li><li>BiRefNet mask</li><li>coverage gaps</li><li>video synthesis + LoRA</li>
+            </ol>
+            <a class="text-link" href="https://github.com/fuyo1622/Coverage-Gap-Guided-Feature-Aware-Data-Augmentation">Thesis code and paper on GitHub<span aria-hidden="true"> ↗</span></a>
+          </div>
+
+          <figure class="chart" aria-labelledby="chart-caption">
+            <figcaption id="chart-caption">SSD MobileNetV2 · mAP@0.50</figcaption>
+            <div class="bars" role="list">
+              <div class="bar-row" role="listitem">
+                <span class="bar-label">Original test set</span>
+                <span class="bar-track"><span class="bar-fill" style="--v: 0.847"></span></span>
+                <span class="bar-value">0.847</span>
+              </div>
+              <div class="bar-row" role="listitem">
+                <span class="bar-label">Synthetic position changes</span>
+                <span class="bar-track"><span class="bar-fill alt" style="--v: 0.604"></span></span>
+                <span class="bar-value">0.604</span>
+              </div>
+              <div class="bar-row" role="listitem">
+                <span class="bar-label">Synthetic orientation changes</span>
+                <span class="bar-track"><span class="bar-fill alt" style="--v: 0.542"></span></span>
+                <span class="bar-value">0.542</span>
+              </div>
+            </div>
+          </figure>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION + SKILLS ============ -->
+    <section class="section" id="education" aria-labelledby="education-title">
+      <div class="wrap two-col">
+        <div>
+          <h2 class="section-title" id="education-title"><span class="num" aria-hidden="true">04</span>Education</h2>
+          <div class="edu">
+            <h3>National Taiwan University</h3>
+            <ul class="edu-list">
+              <li>
+                <span>M.S. in Communication Engineering<span class="edu-note">GPA 3.77 / 4.30</span></span>
+                <span class="date">Sep 2022 – Mar 2026</span>
+              </li>
+              <li>
+                <span>B.S. in Electrical Engineering</span>
+                <span class="date">Sep 2018 – Jun 2022</span>
+              </li>
+              <li>
+                <span>Teaching Assistant, Discrete Mathematics and Data Structures</span>
+                <span class="date">Sep 2023 – Jun 2024</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div>
+          <h2 class="section-title" id="skills-title"><span class="num" aria-hidden="true">05</span>Skills</h2>
+          <dl class="skills">
+            <div><dt>Programming</dt><dd>Python (primary), JavaScript/React, C++/Qt</dd></div>
+            <div><dt>Testing &amp; CI</dt><dd>pytest, Vitest, Playwright, GitHub Actions, Jenkins, Behave</dd></div>
+            <div><dt>Platforms</dt><dd>Linux, Git, Docker, Jetson Orin, Raspberry Pi 5/CM5, QGroundControl</dd></div>
+            <div><dt>Video &amp; ML</dt><dd>GStreamer, V4L2, RTSP, OpenCV, PyTorch, YOLO, NCNN</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>© <span id="year">2026</span> ShaoMing Chen</p>
+      <p><a href="https://github.com/fuyo1622">GitHub</a> · Plain HTML &amp; CSS on GitHub Pages</p>
+    </div>
+  </footer>
+
+  <script src="assets/main.js" defer></script>
+</body>
+</html>

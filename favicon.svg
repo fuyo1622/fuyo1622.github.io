@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="14" fill="#1b1b1a"/>
+  <text x="32" y="41" text-anchor="middle" font-family="ui-monospace, Consolas, monospace" font-size="24" font-weight="600" fill="#fbfaf7">SC</text>
+  <rect x="14" y="48" width="12" height="3" rx="1.5" fill="#fb8a4c"/>
+</svg>
