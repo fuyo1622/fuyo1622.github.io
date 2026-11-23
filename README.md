@@ -1,6 +1,6 @@
 # fuyo1622.github.io
 
-Personal website of ShaoMing Chen: **https://fuyo1622.github.io/**
+Personal website of fuyo1622: **https://fuyo1622.github.io/**
 
 Plain HTML, CSS and a little JavaScript. No build step: GitHub Pages serves the `main` branch as is.
 
@@ -8,7 +8,8 @@ Plain HTML, CSS and a little JavaScript. No build step: GitHub Pages serves the 
 |---|---|
 | `index.html` | All page content |
 | `assets/style.css` | Styles, light and dark themes |
-| `assets/main.js` | Theme toggle, active nav link, scroll reveal |
+| `assets/main.js` | Theme toggle, active nav link, thesis chart animation |
+| `resume.pdf` | Resume linked from the page (phone number removed). Replace it with a new export when the resume changes. |
 | `favicon.svg` | Tab icon |
 | `.nojekyll` | Tells Pages to skip Jekyll processing |
 

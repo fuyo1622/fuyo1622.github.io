@@ -1,4 +1,4 @@
-/* ShaoMing Chen · personal site
+/* fuyo1622 · personal site
    Plain CSS, no build step. Colors are tokens; dark mode redefines them. */
 
 :root {
@@ -230,14 +230,6 @@ h1 {
   font-weight: 700;
   letter-spacing: -0.025em;
   line-height: 1.05;
-}
-.name-zh {
-  display: block;
-  margin-top: 12px;
-  font-size: 0.36em;
-  font-weight: 500;
-  color: var(--faint);
-  letter-spacing: 0.12em;
 }
 
 .lede {
@@ -654,13 +646,6 @@ h1 {
   border-bottom: 1px solid var(--border);
 }
 .edu-list li:first-child { border-top: 1px solid var(--border); }
-.edu-note {
-  display: block;
-  font-family: var(--font-mono);
-  font-size: 12.5px;
-  color: var(--accent-text);
-  margin-top: 2px;
-}
 
 .skills { margin: 0; }
 .skills > div {
