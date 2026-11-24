@@ -9,6 +9,7 @@ Plain HTML, CSS and a little JavaScript. No build step: GitHub Pages serves the 
 | `index.html` | All page content |
 | `assets/style.css` | Styles, light and dark themes |
 | `assets/main.js` | Theme toggle, active nav link, thesis chart animation |
+| `assets/tfv-demo.mp4`, `assets/tfv-demo-poster.jpg` | Translate from Voice demo video (1080p, 76 s) and its poster frame, shown above the project cards. The clip in it is CC BY 3.0 and credited under the video. |
 | `resume.pdf` | Resume linked from the page (phone number removed). Replace it with a new export when the resume changes. |
 | `favicon.svg` | Tab icon |
 | `.nojekyll` | Tells Pages to skip Jekyll processing |

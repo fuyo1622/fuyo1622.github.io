@@ -430,6 +430,46 @@ h1 {
   gap: 20px;
 }
 
+/* demo video above the project cards */
+.demo {
+  margin: 0 0 20px;
+  padding: 14px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+.demo video {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  border-radius: 10px;
+  background: #000;
+}
+.demo figcaption {
+  margin: 14px 6px 4px;
+  font-size: 15px;
+  color: var(--muted);
+}
+.demo-label {
+  display: block;
+  margin-bottom: 4px;
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  color: var(--faint);
+}
+.demo-credit {
+  display: block;
+  margin-top: 8px;
+  font-size: 12.5px;
+  color: var(--faint);
+}
+.demo-credit a { text-underline-offset: 2px; }
+@media (max-width: 640px) {
+  .demo { padding: 8px; }
+  .demo figcaption { margin: 12px 6px 4px; font-size: 14px; }
+}
+
 .project {
   display: flex;
   flex-direction: column;
