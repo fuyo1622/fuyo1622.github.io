@@ -28,7 +28,7 @@
       if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
     } catch (e) {}
   </script>
-  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/style.css?v=2026-11-24">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -151,30 +151,9 @@
           wrote most of the code.
         </p>
 
-        <!-- Translate from Voice demo: full width, so its subtitles stay readable -->
-        <figure class="demo" id="tfv-demo">
-          <video controls playsinline preload="metadata" width="1920" height="1080" poster="assets/tfv-demo-poster.jpg">
-            <source src="assets/tfv-demo.mp4" type="video/mp4">
-            <a href="assets/tfv-demo.mp4">Download the Translate from Voice demo (MP4)</a>
-          </video>
-          <figcaption>
-            <span class="demo-label">Translate from Voice · live demo · 76 s, sound on</span>
-            Recorded on an RTX 3050 laptop with every model running locally. A Japanese interview plays;
-            the Japanese appears while it is spoken, with furigana, and each phrase is translated into
-            Traditional Chinese, then into English after a switch on the subtitle bar.
-            <span class="demo-credit">
-              Clip: “【いまできること】呼び掛けに即答「行かせてもらいます」～西川周作選手（浦和レッズ）一問一答” by
-              <a href="https://www.youtube.com/@tasukeaijapan">助けあいジャパン情報発信本部</a>,
-              <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>, via
-              <a href="https://commons.wikimedia.org/wiki/File:%E3%80%90%E3%81%84%E3%81%BE%E3%81%A7%E3%81%8D%E3%82%8B%E3%81%93%E3%81%A8%E3%80%91%E5%91%BC%E3%81%B3%E6%8E%9B%E3%81%91%E3%81%AB%E5%8D%B3%E7%AD%94%E3%80%8C%E8%A1%8C%E3%81%8B%E3%81%9B%E3%81%A6%E3%82%82%E3%82%89%E3%81%84%E3%81%BE%E3%81%99%E3%80%8D%EF%BD%9E%E8%A5%BF%E5%B7%9D%E5%91%A8%E4%BD%9C%E9%81%B8%E6%89%8B%EF%BC%88%E6%B5%A6%E5%92%8C%E3%83%AC%E3%83%83%E3%82%BA%EF%BC%89%E4%B8%80%E5%95%8F%E4%B8%80%E7%AD%94.webm">Wikimedia Commons</a>;
-              shown with tfv’s subtitles over it.
-            </span>
-          </figcaption>
-        </figure>
-
         <div class="project-grid">
-          <!-- Translate from Voice -->
-          <article class="project">
+          <!-- Translate from Voice: the demo first, then the details; spans both columns so the subtitles stay readable -->
+          <article class="project project-featured">
             <header class="project-head">
               <h3>Translate from Voice</h3>
               <div class="project-links">
@@ -182,17 +161,40 @@
               </div>
             </header>
             <p class="tagline">Live subtitles for whatever your PC plays: local speech recognition and translation between 繁中, English and 日本語.</p>
-            <dl class="metrics">
-              <div><dt>median first-text latency</dt><dd>4.1→1.0 s</dd></div>
-              <div><dt>Japanese CER</dt><dd>39.0→11.2%</dd></div>
-              <div><dt>pytest tests</dt><dd>107</dd></div>
-            </dl>
-            <ul class="bullets">
-              <li>Windows desktop app that captures system audio and overlays live, translated subtitles using local models only.</li>
-              <li>Picks speech and translation models from the hardware profile, free memory and a startup speed test, and switches to lighter models when either stage falls behind live audio.</li>
-              <li>Evaluation harness for CER/WER, chrF, speed and VRAM. On a 12-clip Japanese TV replay (RTX 3050 4 GB laptop), moving to ReazonSpeech with live partial text plus VAD and segmentation fixes produced the gains above.</li>
-            </ul>
-            <ul class="tags" aria-label="Technologies"><li>Python</li><li>PySide6</li><li>faster-whisper</li><li>llama.cpp</li></ul>
+            <figure class="project-demo" id="tfv-demo">
+              <video controls playsinline preload="metadata" width="1920" height="1080" poster="assets/tfv-demo-poster.jpg">
+                <source src="assets/tfv-demo.mp4" type="video/mp4">
+                <a href="assets/tfv-demo.mp4">Download the Translate from Voice demo (MP4)</a>
+              </video>
+              <figcaption>
+                <span class="demo-label">live demo · 76 s, sound on</span>
+                A Japanese interview plays: the Japanese appears while it is spoken, with furigana, and each phrase is
+                translated into Traditional Chinese, then into English after a switch on the subtitle bar. Recorded on an
+                RTX 3050 laptop with every model running locally.
+                <span class="demo-credit">
+                  Clip: “【いまできること】呼び掛けに即答「行かせてもらいます」～西川周作選手（浦和レッズ）一問一答” by
+                  <a href="https://www.youtube.com/@tasukeaijapan">助けあいジャパン情報発信本部</a>,
+                  <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>, via
+                  <a href="https://commons.wikimedia.org/wiki/File:%E3%80%90%E3%81%84%E3%81%BE%E3%81%A7%E3%81%8D%E3%82%8B%E3%81%93%E3%81%A8%E3%80%91%E5%91%BC%E3%81%B3%E6%8E%9B%E3%81%91%E3%81%AB%E5%8D%B3%E7%AD%94%E3%80%8C%E8%A1%8C%E3%81%8B%E3%81%9B%E3%81%A6%E3%82%82%E3%82%89%E3%81%84%E3%81%BE%E3%81%99%E3%80%8D%EF%BD%9E%E8%A5%BF%E5%B7%9D%E5%91%A8%E4%BD%9C%E9%81%B8%E6%89%8B%EF%BC%88%E6%B5%A6%E5%92%8C%E3%83%AC%E3%83%83%E3%82%BA%EF%BC%89%E4%B8%80%E5%95%8F%E4%B8%80%E7%AD%94.webm">Wikimedia Commons</a>;
+                  shown with tfv’s subtitles over it.
+                </span>
+              </figcaption>
+            </figure>
+            <div class="project-details">
+              <dl class="metrics">
+                <div><dt>median first-text latency</dt><dd>4.1→1.0 s</dd></div>
+                <div><dt>Japanese CER</dt><dd>39.0→11.2%</dd></div>
+                <div><dt>pytest tests</dt><dd>107</dd></div>
+              </dl>
+              <div>
+                <ul class="bullets">
+                  <li>Windows desktop app that captures system audio and overlays live, translated subtitles using local models only.</li>
+                  <li>Picks speech and translation models from the hardware profile, free memory and a startup speed test, and switches to lighter models when either stage falls behind live audio.</li>
+                  <li>Evaluation harness for CER/WER, chrF, speed and VRAM. On a 12-clip Japanese TV replay (RTX 3050 4 GB laptop), moving to ReazonSpeech with live partial text plus VAD and segmentation fixes produced the gains above.</li>
+                </ul>
+                <ul class="tags" aria-label="Technologies"><li>Python</li><li>PySide6</li><li>faster-whisper</li><li>llama.cpp</li></ul>
+              </div>
+            </div>
           </article>
 
           <!-- Taiwan Weather -->
